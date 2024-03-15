@@ -16,10 +16,11 @@
   --dark-green-2: #062e05;
   --dark-green-3: #05775d;
   --gold-1: #d2c1a2;
-  --gold-2: #e2922d;
+  --gold-3: #b05f1e;
+  --gold-2: #ffd662;
   --grey: #f7f7f7;
-  --opacity-2: #062e05c7;
-  --opacity-1: #05775c62;
+  --opacity-2: #062e0596;
+  --opacity-1: #05775c63;
 }
 
 @font-face {
@@ -99,7 +100,7 @@ body {
   padding: 0 5rem;
   font-family: Figtree;
   text-align: center;
-  color: var(--gold-1);
+  color: var(--gold-3);
   margin-bottom: 2.5rem;
 }
 .login-box2 .type {
@@ -146,6 +147,7 @@ body {
   font-family: Hogwarts, sans-serif;
   font-size: 2rem;
   border: none;
+  padding-bottom: 2rem;
   background: linear-gradient(to right, var(--dark-green-2) 0%, var(--dark-green-3) 60%, var(--dark-green-2) 100%);
   background-size: 300% 100%;
   color: var(--gold-2);
