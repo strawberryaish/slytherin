@@ -18,9 +18,10 @@
     --gold-1: #d2c1a2;
     --gold-3: #b05f1e;
     --gold-2: #ffd662;
+    --gold-3: #d2aa6b;
     --grey: #f7f7f7;
 
-    --opacity-2: #062e0596;
+    --opacity-2: #062e05a9;
     --opacity-1: #05775c63;
 
     
@@ -60,6 +61,19 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+}
+
+.full-width {
+    
+}
+
+
+.header-title {
+    color: var(--gold-2);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    
 }
 
 .container {
@@ -67,7 +81,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6rem 0;
+    margin-bottom: 7rem ;
     
 
 }
@@ -76,7 +90,7 @@ body {
     // width: 130rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(7, 6vw);
+    grid-template-rows: repeat(7, 5vw);
     grid-gap: 1rem;
     
         
