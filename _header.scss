@@ -42,7 +42,6 @@
     font-weight: 600;
     color: var(--white);
     background-color: #000;    
-    // padding: 2rem;
     height: 6rem;
    
     display: flex;
@@ -52,16 +51,20 @@
 
     
     &-nav {
+      height: 100%;
+       ul:not(.menu-sub) {
       
-       ul {
-      
-        
         display: flex;
         align-items: center;
         gap: 4rem;
         list-style: none;
 
        }
+
+       ul, li {
+        height: 100%;
+       }
+
 
 
        :link, :visited {
@@ -71,16 +74,21 @@
         
        
        }
+       
 
        .nav-link {
+        height: 100%;
         transition: all 0.3s;
-        border-bottom: 1px inset transparent;
-        display: inline-block; //we set to inline-block so we can apply the translateY
-
+       
+        display: flex;
+        align-items: center;
 
         &:hover:not(&-active) { //hover all links except the ACTIVE LINK
             color: var(--dark-green-3);
-            border-bottom: 1px inset var(--dark-green-3);
+            // border-bottom: 1px inset var(--dark-green-3);
+            text-decoration: underline; //*substitute for border-bottom style
+        text-decoration-skip-ink: auto;
+        text-underline-offset: 10px;
             transform: translateY(-3px);
         } 
     
@@ -92,9 +100,64 @@
 
        }
        
-
-     
-
       
     }
+
+    // FOR SUBMENU
+    .menu {
+        position: relative;
+
+     
+        &-icon {
+            margin-left: 0.5rem;
+        }
+
+        &-sub {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            text-transform: capitalize;
+            font-weight: 500;
+            gap: 2rem;
+            background-color: var(--dark-green-1);
+            padding: 2rem;
+           
+            height: auto;
+            
+            transition: all 0.3s;
+
+            // submenu 1 and 2
+            &-1 {
+            width: 18rem;
+            left: -2rem;
+            }
+
+            &-2 {
+            width: 21rem;
+            left: -1.5rem;
+
+            }
+
+            li {
+            transition: all 0.5s;
+            }
+
+            li:hover {
+                transform: translateX(0.7rem);
+                font-weight: 700;
+                color: var(--gold-2);
+            }
+            
+        }
+
+        &:hover .menu-sub {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+
 }
