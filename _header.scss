@@ -1,0 +1,98 @@
+.header-title {
+    // color: var(--gold-2);
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    
+}
+
+.main-header {
+
+    background-color: var(--dark-green-2);
+    padding: 1rem 5rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    
+
+    &-logo {
+        margin: 0 auto;
+        
+        img {
+        margin-left: 13rem; //push back the logo to the center since we added padding to the buttons
+        height: 6rem; }
+      
+    }
+
+ 
+}
+
+.secondary-header {
+    position: fixed;
+    top: 8rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: Figtree;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--white);
+    background-color: #000;    
+    // padding: 2rem;
+    height: 6rem;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    
+    &-nav {
+      
+       ul {
+      
+        
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        list-style: none;
+
+       }
+
+
+       :link, :visited {
+        
+        color: inherit;
+        text-decoration: none;
+        
+       
+       }
+
+       .nav-link {
+        transition: all 0.3s;
+        border-bottom: 1px inset transparent;
+        display: inline-block; //we set to inline-block so we can apply the translateY
+
+
+        &:hover:not(&-active) { //hover all links except the ACTIVE LINK
+            color: var(--dark-green-3);
+            border-bottom: 1px inset var(--dark-green-3);
+            transform: translateY(-3px);
+        } 
+    
+        &-active {
+            font-weight: 800;
+            color: var(--dark-green-3);
+            cursor: default; //overrides the cursor: pointer
+        }
+
+       }
+       
+
+     
+
+      
+    }
+}

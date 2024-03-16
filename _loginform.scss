@@ -1,0 +1,156 @@
+.login {
+    max-width: 115rem;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // box-shadow: rgba(0, 0, 0, 0.15) 1px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &-box1 {
+     
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+        background-color: var(--dark-green-2);
+
+       
+background: radial-gradient(circle, var(--dark-green-1) 43%, var(--dark-green-2) 100%);
+
+        color: var(--gold-2);
+        
+        padding: 1rem 8rem;
+
+        .message1 {
+            font-size: 1.8rem;
+        }
+
+        .message2 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            
+            
+        }
+
+        .message3 {
+            font-size: 1.6rem;
+            
+          
+        }
+
+       
+    }
+
+    &-box2 {
+        background-color: var(--white);
+       
+        padding: 5rem 4rem;
+
+      
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            color: var(--dark-green-2);
+        }
+
+        .text2 {
+            font-size: 1.6rem;
+            padding: 0 5rem;
+            font-family: Figtree;
+            text-align: center;
+            color: var(--gold-3);
+            margin-bottom: 2.5rem;
+
+        }
+
+       
+        .type {
+            
+            & > *:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            margin: 0 auto;
+           
+            width: 70%;
+
+            &-label {
+                font-size: 1.6rem;
+                font-family: Figtree;
+                line-height: 1.5;
+                font-weight: 600;
+
+            }
+
+            &-input {
+                width: 100%;
+                padding: 1.3rem;
+                border: none;
+                font-size: 1.6rem;
+                background-color: var(--grey);
+                border-left: 4px solid var(--dark-green-2);
+            }
+
+            .login-option {
+                width: 100%;
+                font-family: Figtree;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                font-size: 1.4rem;
+              
+                :link, :visited {
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    font-weight: 600;
+                }
+            }
+
+            .rememberme {
+                display: flex;
+                align-items: center;
+               
+                gap: 0.3rem;
+            }
+           
+
+            .btn-form{
+                margin-top: 2rem;
+                font-family: Hogwarts, sans-serif;
+                font-size: 2rem;
+                border: none;
+                padding-bottom: 2rem;
+                
+                
+                // background-color: var(--dark-green-2);
+                background: linear-gradient(to right, var(--dark-green-2) 0%, var(--dark-green-3) 60%, var(--dark-green-2) 100%);
+                background-size: 300% 100%;
+                color: var(--gold-2);
+                padding: 0.7rem;
+                border-radius: 3rem;
+                cursor: pointer;
+                width: 100%;
+                transition: all 0.5s;
+
+                &:hover {
+                background-position: right center;
+
+                }
+            }
+            
+            
+        }
+
+      
+    }
+}
