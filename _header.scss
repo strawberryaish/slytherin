@@ -3,6 +3,7 @@
     color: #fff;
     font-size: 4rem;
     margin-bottom: 1rem;
+    text-align: center;
     
 }
 
@@ -16,13 +17,13 @@
     justify-content: center;
     top: 0;
     width: 100%;
-    
+    z-index: 9999;
 
     &-logo {
         margin: 0 auto;
         
         img {
-        margin-left: 13rem; //push back the logo to the center since we added padding to the buttons
+        margin-left: 15rem; //push back the logo to the center since we added padding to the buttons
         height: 6rem; }
       
     }
@@ -34,6 +35,7 @@
     position: fixed;
     top: 8rem;
     width: 100%;
+    z-index: 9999;
     font-size: 1.6rem;
     font-family: Figtree;
     text-transform: uppercase;

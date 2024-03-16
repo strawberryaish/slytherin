@@ -16,15 +16,31 @@
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(7, 6vw);
     grid-gap: 1rem;
+  
+    figure {
+      display: contents;
+      overflow: hidden;
+    }
     
-        
     &-img {
       width: 100%;
       height: 100%;
+      
        object-fit: cover;
        display: block;
     box-shadow: rgba(255, 255, 255, 0.286) 0px 3px 8px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    
 
+      &:hover {
+         transform: scale(1.04);
+         box-shadow: rgba(255, 255, 255, 0.442) 0px 3px 30px;
+         
+
+      }
+
+   
 
        &-1 {
         grid-row: 1/span 4;
