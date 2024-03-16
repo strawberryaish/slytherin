@@ -9,10 +9,15 @@
 
 }
 
+.bg-setup {
+   background-color: rgba(0, 0, 0, 0.333);
+   padding: 3rem 0;
+   
+}
 
 .gallery {
-    // width: 130rem;
     display: grid;
+    margin-top: 4rem;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(7, 6vw);
     grid-gap: 1rem;
@@ -20,7 +25,9 @@
     figure {
       display: contents;
       overflow: hidden;
+   
     }
+
     
     &-img {
       width: 100%;
@@ -36,11 +43,10 @@
       &:hover {
          transform: scale(1.04);
          box-shadow: rgba(255, 255, 255, 0.442) 0px 3px 30px;
-         
-
+        
       }
 
-   
+    
 
        &-1 {
         grid-row: 1/span 4;
